@@ -8,12 +8,29 @@ package com.iwhys.classeditor.domain.interf;
  */
 public interface MethodProxy {
 
+    /**
+     * 方法的宿主对象
+     * @return 实例方法返回实例对象,静态方法返回null
+     */
     Object getThis();
 
+    /**
+     * 方法的参数
+     * @return 方法参数集合
+     */
     Object[] gerArgs();
 
+    /**
+     * 方法的返回类型
+     * @return 返回类型
+     */
     Class<?> getReturnType();
 
+    /**
+     * 调用方法
+     * @param args 方法参数
+     * @return 方法返回值
+     */
     Object invoke(Object[] args);
 
 }
