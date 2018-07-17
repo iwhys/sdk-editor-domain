@@ -6,12 +6,12 @@ package com.iwhys.classeditor.domain.interf;
  *
  * @author 王洪胜
  */
-public class InternalMethodProxyImpl<T, R> implements MethodProxy {
+public class InternalMethodProxyImpl implements MethodProxy {
 
-    private final T thisObject;
+    private final Object thisObject;
     private final Object[] args;
 
-    public InternalMethodProxyImpl(T thisObject, Object[] args){
+    public InternalMethodProxyImpl(Object thisObject, Object[] args){
         this.thisObject = thisObject;
         if (args == null) {
             args = new Object[0];
@@ -20,7 +20,7 @@ public class InternalMethodProxyImpl<T, R> implements MethodProxy {
     }
 
     @Override
-    public T getThis() {
+    public Object getThis() {
         return thisObject;
     }
 
@@ -30,7 +30,7 @@ public class InternalMethodProxyImpl<T, R> implements MethodProxy {
     }
 
     @Override
-    public R invoke(Object[] args) {
+    public Object invoke(Object[] args) {
         return null;
     }
 }
