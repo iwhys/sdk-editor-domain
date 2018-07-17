@@ -18,13 +18,7 @@ public interface MethodProxy {
      * 方法的参数
      * @return 方法参数集合
      */
-    Object[] gerArgs();
-
-    /**
-     * 方法的返回类型
-     * @return 返回类型
-     */
-    Class<?> getReturnType();
+    Object[] getArgs();
 
     /**
      * 调用方法
