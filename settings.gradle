@@ -1,1 +1,1 @@
-include ':plugin-domain'
+include ':domain'

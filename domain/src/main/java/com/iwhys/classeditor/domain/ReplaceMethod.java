@@ -14,5 +14,8 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.CLASS)
 @Target({ElementType.TYPE, ElementType.METHOD})
 public @interface ReplaceMethod {
+    /**
+     * 标记需要被替换的方法,value无实际意义
+     */
     String value() default "";
 }

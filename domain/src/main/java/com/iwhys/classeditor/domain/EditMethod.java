@@ -14,5 +14,8 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.CLASS)
 @Target(ElementType.TYPE)
 public @interface EditMethod {
+    /**
+     * 标记被需要被编辑的方法,支持正则
+     */
     String value();
 }

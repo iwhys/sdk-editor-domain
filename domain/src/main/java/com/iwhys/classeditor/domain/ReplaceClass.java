@@ -14,5 +14,8 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.CLASS)
 @Target(ElementType.TYPE)
 public @interface ReplaceClass {
+    /**
+     * 标记需要被替换的类,value无实际意义
+     */
     String value() default "";
 }

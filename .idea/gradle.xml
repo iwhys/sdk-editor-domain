@@ -8,7 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/plugin-domain" />
+            <option value="$PROJECT_DIR$/domain" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
