@@ -1,4 +1,4 @@
-package com.iwhys.classeditor.domain;
+package com.iwhys.sdkeditor.domain;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -15,7 +15,9 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 public @interface ReplaceClass {
     /**
-     * 标记需要被替换的类,value无实际意义
+     * 标记需要被替换的类所在包的标识
+     * 依赖库格式[group:name:version]取<font color="red"><b>[name:version]</b></font>作为标识
+     * 如：原依赖[androidx.core:core:1.3.0] 取[core:1.3.0]作为标识
      */
     String value() default "";
 }
